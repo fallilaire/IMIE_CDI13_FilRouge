@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_p7KZINgDEeaHSNpq2JSR0A" name="NewModel">
-  <packagedElement xmi:type="uml:Component" xmi:id="_hxzlANgGEeaHSNpq2JSR0A" name="Preparation conseil de classe" useCase="_hxzlAdgGEeaHSNpq2JSR0A _hxzlAtgGEeaHSNpq2JSR0A _hxzlA9gGEeaHSNpq2JSR0A _hxzlBNgGEeaHSNpq2JSR0A _hxzlBdgGEeaHSNpq2JSR0A _hxzlBtgGEeaHSNpq2JSR0A _hxzlB9gGEeaHSNpq2JSR0A _hxzlCNgGEeaHSNpq2JSR0A _hxzlCdgGEeaHSNpq2JSR0A _hxzlCtgGEeaHSNpq2JSR0A _hxzlC9gGEeaHSNpq2JSR0A _hxzlDNgGEeaHSNpq2JSR0A _hxzlDdgGEeaHSNpq2JSR0A _hxzlDtgGEeaHSNpq2JSR0A _hxzlD9gGEeaHSNpq2JSR0A _hxzlENgGEeaHSNpq2JSR0A _hxzlFNgGEeaHSNpq2JSR0A _hxzlFtgGEeaHSNpq2JSR0A _hxzlF9gGEeaHSNpq2JSR0A _hxzlGNgGEeaHSNpq2JSR0A _hxzlGdgGEeaHSNpq2JSR0A _hxzlGtgGEeaHSNpq2JSR0A _hxzlG9gGEeaHSNpq2JSR0A _hxzlHNgGEeaHSNpq2JSR0A _w3ApkNgGEeaHSNpq2JSR0A _w3ET8NgGEeaHSNpq2JSR0A _w2ynINgGEeaHSNpq2JSR0A _w2bawNgGEeaHSNpq2JSR0A _IGTazNgHEeaHSNpq2JSR0A _dwxjENgHEeaHSNpq2JSR0A _dw10gNgHEeaHSNpq2JSR0A _dwf2QNgHEeaHSNpq2JSR0A _dwpnQNgHEeaHSNpq2JSR0A _dwl84NgHEeaHSNpq2JSR0A _dwXTYNgHEeaHSNpq2JSR0A _dwM7UNgHEeaHSNpq2JSR0A _MDRHsB6hEeeThNmQ9wMYug _dRbAUB6iEeeThNmQ9wMYug _aT0lwB6tEeeThNmQ9wMYug">
+  <packagedElement xmi:type="uml:Component" xmi:id="_hxzlANgGEeaHSNpq2JSR0A" name="Preparation conseil de classe" useCase="_hxzlAdgGEeaHSNpq2JSR0A _hxzlAtgGEeaHSNpq2JSR0A _hxzlA9gGEeaHSNpq2JSR0A _hxzlBNgGEeaHSNpq2JSR0A _hxzlBdgGEeaHSNpq2JSR0A _hxzlBtgGEeaHSNpq2JSR0A _hxzlB9gGEeaHSNpq2JSR0A _hxzlCNgGEeaHSNpq2JSR0A _hxzlCdgGEeaHSNpq2JSR0A _hxzlCtgGEeaHSNpq2JSR0A _hxzlC9gGEeaHSNpq2JSR0A _hxzlDNgGEeaHSNpq2JSR0A _hxzlDdgGEeaHSNpq2JSR0A _hxzlENgGEeaHSNpq2JSR0A _hxzlFNgGEeaHSNpq2JSR0A _hxzlFtgGEeaHSNpq2JSR0A _hxzlF9gGEeaHSNpq2JSR0A _hxzlGNgGEeaHSNpq2JSR0A _hxzlGdgGEeaHSNpq2JSR0A _hxzlGtgGEeaHSNpq2JSR0A _hxzlG9gGEeaHSNpq2JSR0A _hxzlHNgGEeaHSNpq2JSR0A _w3ApkNgGEeaHSNpq2JSR0A _w3ET8NgGEeaHSNpq2JSR0A _w2ynINgGEeaHSNpq2JSR0A _w2bawNgGEeaHSNpq2JSR0A _IGTazNgHEeaHSNpq2JSR0A _dwxjENgHEeaHSNpq2JSR0A _dw10gNgHEeaHSNpq2JSR0A _dwf2QNgHEeaHSNpq2JSR0A _dwpnQNgHEeaHSNpq2JSR0A _dwl84NgHEeaHSNpq2JSR0A _dwXTYNgHEeaHSNpq2JSR0A _dwM7UNgHEeaHSNpq2JSR0A _MDRHsB6hEeeThNmQ9wMYug _dRbAUB6iEeeThNmQ9wMYug _aT0lwB6tEeeThNmQ9wMYug">
     <ownedUseCase xmi:id="_w3ApkNgGEeaHSNpq2JSR0A" name="Remplir questionnaire personnalisé" subject="_hxzlANgGEeaHSNpq2JSR0A">
       <generalization xmi:id="_w3ApkdgGEeaHSNpq2JSR0A" general="_w3ET8NgGEeaHSNpq2JSR0A"/>
     </ownedUseCase>
@@ -26,7 +26,7 @@
     <ownedUseCase xmi:id="_dwpnQNgHEeaHSNpq2JSR0A" name="Gérer les formulaires" subject="_hxzlANgGEeaHSNpq2JSR0A">
       <include xmi:id="_PpH9oB6tEeeThNmQ9wMYug" addition="_MDRHsB6hEeeThNmQ9wMYug"/>
     </ownedUseCase>
-    <ownedUseCase xmi:id="_dwl84NgHEeaHSNpq2JSR0A" name="Gérer administrateurs locaux" subject="_hxzlANgGEeaHSNpq2JSR0A">
+    <ownedUseCase xmi:id="_dwl84NgHEeaHSNpq2JSR0A" name="Gérer administrateurs" subject="_hxzlANgGEeaHSNpq2JSR0A">
       <generalization xmi:id="_TOeQgB6pEeeThNmQ9wMYug" general="_dRbAUB6iEeeThNmQ9wMYug"/>
     </ownedUseCase>
     <ownedUseCase xmi:id="_dwXTYNgHEeaHSNpq2JSR0A" name="Gérer les campagnes" subject="_hxzlANgGEeaHSNpq2JSR0A">
@@ -57,8 +57,6 @@
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlC9gGEeaHSNpq2JSR0A" name="Visualiser les résultats locaux" subject="_hxzlANgGEeaHSNpq2JSR0A"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlDNgGEeaHSNpq2JSR0A" name="Envoyer email de confirmation et de modification" subject="_hxzlANgGEeaHSNpq2JSR0A"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlDdgGEeaHSNpq2JSR0A" name="Gérer des campagnes" subject="_hxzlANgGEeaHSNpq2JSR0A"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlDtgGEeaHSNpq2JSR0A" name="Gérer des élèves" subject="_hxzlANgGEeaHSNpq2JSR0A"/>
-    <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlD9gGEeaHSNpq2JSR0A" name="Gérer des classes" subject="_hxzlANgGEeaHSNpq2JSR0A"/>
     <packagedElement xmi:type="uml:UseCase" xmi:id="_hxzlENgGEeaHSNpq2JSR0A" name="Modifier questionnaire anonyme" subject="_hxzlANgGEeaHSNpq2JSR0A">
       <generalization xmi:id="_hxzlEdgGEeaHSNpq2JSR0A" general="_hxzlAdgGEeaHSNpq2JSR0A"/>
       <ownedUseCase xmi:id="_hxzlEtgGEeaHSNpq2JSR0A" name="Remplir questionnaire anonyme"/>
@@ -279,4 +277,8 @@
     <node xmi:type="uml:ActivityFinalNode" xmi:id="_oKxJoB68EeeThNmQ9wMYug" name="Formulaire sauvegardé" incoming="_poH4cB68EeeThNmQ9wMYug"/>
   </packagedElement>
   <packagedElement xmi:type="uml:TimeEvent" xmi:id="_gdSWAR67EeeThNmQ9wMYug" name="TimeEvent1"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_YMrN4B6_EeeThNmQ9wMYug" memberEnd="_YMrN4R6_EeeThNmQ9wMYug _YMrN4h6_EeeThNmQ9wMYug">
+    <ownedEnd xmi:id="_YMrN4R6_EeeThNmQ9wMYug" type="_dw9wUNgHEeaHSNpq2JSR0A" association="_YMrN4B6_EeeThNmQ9wMYug"/>
+    <ownedEnd xmi:id="_YMrN4h6_EeeThNmQ9wMYug" type="_MDRHsB6hEeeThNmQ9wMYug" association="_YMrN4B6_EeeThNmQ9wMYug"/>
+  </packagedElement>
 </uml:Model>
