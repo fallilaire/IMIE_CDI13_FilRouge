@@ -281,4 +281,267 @@
     <ownedEnd xmi:id="_YMrN4R6_EeeThNmQ9wMYug" type="_dw9wUNgHEeaHSNpq2JSR0A" association="_YMrN4B6_EeeThNmQ9wMYug"/>
     <ownedEnd xmi:id="_YMrN4h6_EeeThNmQ9wMYug" type="_MDRHsB6hEeeThNmQ9wMYug" association="_YMrN4B6_EeeThNmQ9wMYug"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_DAHwYDcEEeeieIG-Ru0W3g" name="S'authentifier" node="_I-B5QDcEEeeieIG-Ru0W3g _MCehsDcEEeeieIG-Ru0W3g _N7obsDcEEeeieIG-Ru0W3g _VPjVQDcEEeeieIG-Ru0W3g _ZR8zsDcEEeeieIG-Ru0W3g">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ryjp8DcEEeeieIG-Ru0W3g" target="_MCehsDcEEeeieIG-Ru0W3g" source="_I-B5QDcEEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Ryk4EDcEEeeieIG-Ru0W3g" name="Initial1_To_Saisir identifiant_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_RymtQDcEEeeieIG-Ru0W3g" name="Initial1_To_Saisir identifiant_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SbcO4DcEEeeieIG-Ru0W3g" target="_N7obsDcEEeeieIG-Ru0W3g" source="_MCehsDcEEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_SbddADcEEeeieIG-Ru0W3g" name="Saisir identifiant_To_Saisir mot de passe_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_SbeEEDcEEeeieIG-Ru0W3g" name="Saisir identifiant_To_Saisir mot de passe_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_W0Cm0DcEEeeieIG-Ru0W3g" target="_VPjVQDcEEeeieIG-Ru0W3g" source="_N7obsDcEEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_W0DN4DcEEeeieIG-Ru0W3g" name="Saisir mot de passe_To_Decision1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_W0DN4TcEEeeieIG-Ru0W3g" name="Saisir mot de passe_To_Decision1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_aioYcDcEEeeieIG-Ru0W3g" name="Connexion réussie" target="_ZR8zsDcEEeeieIG-Ru0W3g" source="_VPjVQDcEEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_aio_gDcEEeeieIG-Ru0W3g" name="Decision1_To_ActivityFinal1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_aio_gTcEEeeieIG-Ru0W3g" name="Decision1_To_ActivityFinal1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_kuyDYDcEEeeieIG-Ru0W3g" name="Connexion échouée" target="_MCehsDcEEeeieIG-Ru0W3g" source="_VPjVQDcEEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_kuyDYTcEEeeieIG-Ru0W3g" name="Decision1_To_Saisir mot de passe_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_kuyqcDcEEeeieIG-Ru0W3g" name="Decision1_To_Saisir mot de passe_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_I-B5QDcEEeeieIG-Ru0W3g" name="Initial1" outgoing="_Ryjp8DcEEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MCehsDcEEeeieIG-Ru0W3g" name="Saisir identifiant" incoming="_Ryjp8DcEEeeieIG-Ru0W3g _kuyDYDcEEeeieIG-Ru0W3g" outgoing="_SbcO4DcEEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_N7obsDcEEeeieIG-Ru0W3g" name="Saisir mot de passe" incoming="_SbcO4DcEEeeieIG-Ru0W3g" outgoing="_W0Cm0DcEEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_VPjVQDcEEeeieIG-Ru0W3g" name="Decision1" incoming="_W0Cm0DcEEeeieIG-Ru0W3g" outgoing="_aioYcDcEEeeieIG-Ru0W3g _kuyDYDcEEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_ZR8zsDcEEeeieIG-Ru0W3g" name="ActivityFinal1" incoming="_aioYcDcEEeeieIG-Ru0W3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_8iHVsDcEEeeieIG-Ru0W3g" name="Ajouter une campagne" node="_UZ6RQDcFEeeieIG-Ru0W3g _akVzMDcFEeeieIG-Ru0W3g _eqa3wDcFEeeieIG-Ru0W3g _iQb8MDcFEeeieIG-Ru0W3g _lrLkwDcFEeeieIG-Ru0W3g _odn3MDcFEeeieIG-Ru0W3g _sasJsDcFEeeieIG-Ru0W3g _XWPisDcJEeeieIG-Ru0W3g _br57YDcJEeeieIG-Ru0W3g _eQAP0DcJEeeieIG-Ru0W3g _k9GSkDcMEeeieIG-Ru0W3g _5P-88DcMEeeieIG-Ru0W3g _dtXgADcNEeeieIG-Ru0W3g _0BgQcDcNEeeieIG-Ru0W3g _0U5tkDcNEeeieIG-Ru0W3g _7fNYIDcNEeeieIG-Ru0W3g _Em58cDcOEeeieIG-Ru0W3g _FJ24gDcOEeeieIG-Ru0W3g">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_milKADcJEeeieIG-Ru0W3g" target="_odn3MDcFEeeieIG-Ru0W3g" source="_lrLkwDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_mimYIDcJEeeieIG-Ru0W3g" name="Choisir établissement_To_Choisir classe_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_mim_MDcJEeeieIG-Ru0W3g" name="Choisir établissement_To_Choisir classe_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uLZVgDcJEeeieIG-Ru0W3g" target="_sasJsDcFEeeieIG-Ru0W3g" source="_odn3MDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_uLZ8kDcJEeeieIG-Ru0W3g" name="Choisir classe_To_Choisir conseil de classe_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_uLajoDcJEeeieIG-Ru0W3g" name="Choisir classe_To_Choisir conseil de classe_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zsQ9EDcJEeeieIG-Ru0W3g" target="_XWPisDcJEeeieIG-Ru0W3g" source="_sasJsDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_zsRkIDcJEeeieIG-Ru0W3g" name="Choisir conseil de classe_To_Définir date conseil de classe_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_zsRkITcJEeeieIG-Ru0W3g" name="Choisir conseil de classe_To_Définir date conseil de classe_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EFDwcDcKEeeieIG-Ru0W3g" target="_eqa3wDcFEeeieIG-Ru0W3g" source="_akVzMDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_EFEXgDcKEeeieIG-Ru0W3g" name="Decision1_To_Fork1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_EFEXgTcKEeeieIG-Ru0W3g" name="Decision1_To_Fork1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EtfCYDcKEeeieIG-Ru0W3g" target="_akVzMDcFEeeieIG-Ru0W3g" source="_UZ6RQDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_EtfpcDcKEeeieIG-Ru0W3g" name="Initial1_To_Decision1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_EtfpcTcKEeeieIG-Ru0W3g" name="Initial1_To_Decision1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FgmhYDcKEeeieIG-Ru0W3g" target="_iQb8MDcFEeeieIG-Ru0W3g" source="_eqa3wDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_FgnIcDcKEeeieIG-Ru0W3g" name="Fork1_To_Remplir titre_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_FgnIcTcKEeeieIG-Ru0W3g" name="Fork1_To_Remplir titre_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_G2TwEDcKEeeieIG-Ru0W3g" target="_lrLkwDcFEeeieIG-Ru0W3g" source="_eqa3wDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_G2UXIDcKEeeieIG-Ru0W3g" name="Fork1_To_Choisir établissement_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_G2U-MDcKEeeieIG-Ru0W3g" name="Fork1_To_Choisir établissement_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JTOecDcKEeeieIG-Ru0W3g" target="_br57YDcJEeeieIG-Ru0W3g" source="_eqa3wDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_JTOecTcKEeeieIG-Ru0W3g" name="Fork1_To_Date début et fin campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_JTPFgDcKEeeieIG-Ru0W3g" name="Fork1_To_Date début et fin campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_J80OADcKEeeieIG-Ru0W3g" target="_eQAP0DcJEeeieIG-Ru0W3g" source="_eqa3wDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_J801EDcKEeeieIG-Ru0W3g" name="Fork1_To_Choisir formulaire_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_J801ETcKEeeieIG-Ru0W3g" name="Fork1_To_Choisir formulaire_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oRMgkDcMEeeieIG-Ru0W3g" target="_k9GSkDcMEeeieIG-Ru0W3g" source="_iQb8MDcFEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_oRNusDcMEeeieIG-Ru0W3g" name="Remplir titre_To_Join1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_oROVwDcMEeeieIG-Ru0W3g" name="Remplir titre_To_Join1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_o8cdADcMEeeieIG-Ru0W3g" target="_k9GSkDcMEeeieIG-Ru0W3g" source="_XWPisDcJEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_o8dEEDcMEeeieIG-Ru0W3g" name="Définir date conseil de classe_To_Join1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_o8drIDcMEeeieIG-Ru0W3g" name="Définir date conseil de classe_To_Join1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_poQaIDcMEeeieIG-Ru0W3g" target="_k9GSkDcMEeeieIG-Ru0W3g" source="_br57YDcJEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_poRoQDcMEeeieIG-Ru0W3g" name="Date début et fin campagne_To_Join1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_poRoQTcMEeeieIG-Ru0W3g" name="Date début et fin campagne_To_Join1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_qQsTIDcMEeeieIG-Ru0W3g" target="_k9GSkDcMEeeieIG-Ru0W3g" source="_eQAP0DcJEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_qQs6MDcMEeeieIG-Ru0W3g" name="Choisir formulaire_To_Join1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_qQs6MTcMEeeieIG-Ru0W3g" name="Choisir formulaire_To_Join1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6b1sEDcMEeeieIG-Ru0W3g" target="_5P-88DcMEeeieIG-Ru0W3g" source="_k9GSkDcMEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_6b1sETcMEeeieIG-Ru0W3g" name="Join1_To_Decision2_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_6b2TIDcMEeeieIG-Ru0W3g" name="Join1_To_Decision2_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8nnnIDcMEeeieIG-Ru0W3g" name="Non terminé || Campagne invalide" target="_akVzMDcFEeeieIG-Ru0W3g" source="_5P-88DcMEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_8noOMDcMEeeieIG-Ru0W3g" name="Decision2_To_Decision1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_8noOMTcMEeeieIG-Ru0W3g" name="Decision2_To_Decision1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ewNdEDcNEeeieIG-Ru0W3g" target="_dtXgADcNEeeieIG-Ru0W3g" source="_7fNYIDcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_ewOEIDcNEeeieIG-Ru0W3g" name="Decision2_To_OpaqueAction8_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_ewOEITcNEeeieIG-Ru0W3g" name="Decision2_To_OpaqueAction8_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_lqeggDcNEeeieIG-Ru0W3g" target="_k9GSkDcMEeeieIG-Ru0W3g" source="_dtXgADcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_lqfHkDcNEeeieIG-Ru0W3g" name="OpaqueAction8_To_Join1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_lqfHkTcNEeeieIG-Ru0W3g" name="OpaqueAction8_To_Join1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_99NroDcNEeeieIG-Ru0W3g" target="_7fNYIDcNEeeieIG-Ru0W3g" source="_5P-88DcMEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_99NroTcNEeeieIG-Ru0W3g" name="Decision2_To_Fork2_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_99OSsDcNEeeieIG-Ru0W3g" name="Decision2_To_Fork2_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_BVMUEDcOEeeieIG-Ru0W3g" target="_0BgQcDcNEeeieIG-Ru0W3g" source="_7fNYIDcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_BVM7IDcOEeeieIG-Ru0W3g" name="Fork2_To_Sauvegarder campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_BVNiMDcOEeeieIG-Ru0W3g" name="Fork2_To_Sauvegarder campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CElJoDcOEeeieIG-Ru0W3g" target="_0U5tkDcNEeeieIG-Ru0W3g" source="_7fNYIDcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_CElwsDcOEeeieIG-Ru0W3g" name="Fork2_To_Lancer campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_CElwsTcOEeeieIG-Ru0W3g" name="Fork2_To_Lancer campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_GgYmkDcOEeeieIG-Ru0W3g" target="_Em58cDcOEeeieIG-Ru0W3g" source="_0BgQcDcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_GgYmkTcOEeeieIG-Ru0W3g" name="Sauvegarder campagne_To_ActivityFinal1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_GgYmkjcOEeeieIG-Ru0W3g" name="Sauvegarder campagne_To_ActivityFinal1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_HGiAkDcOEeeieIG-Ru0W3g" target="_FJ24gDcOEeeieIG-Ru0W3g" source="_0U5tkDcNEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_HGiAkTcOEeeieIG-Ru0W3g" name="Lancer campagne_To_ActivityFinal2_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_HGiAkjcOEeeieIG-Ru0W3g" name="Lancer campagne_To_ActivityFinal2_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_UZ6RQDcFEeeieIG-Ru0W3g" name="Initial1" outgoing="_EtfCYDcKEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_akVzMDcFEeeieIG-Ru0W3g" name="Decision1" incoming="_EtfCYDcKEeeieIG-Ru0W3g _8nnnIDcMEeeieIG-Ru0W3g" outgoing="_EFDwcDcKEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_eqa3wDcFEeeieIG-Ru0W3g" name="Fork1" incoming="_EFDwcDcKEeeieIG-Ru0W3g" outgoing="_FgmhYDcKEeeieIG-Ru0W3g _G2TwEDcKEeeieIG-Ru0W3g _JTOecDcKEeeieIG-Ru0W3g _J80OADcKEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iQb8MDcFEeeieIG-Ru0W3g" name="Remplir titre" incoming="_FgmhYDcKEeeieIG-Ru0W3g" outgoing="_oRMgkDcMEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_lrLkwDcFEeeieIG-Ru0W3g" name="Choisir établissement" incoming="_G2TwEDcKEeeieIG-Ru0W3g" outgoing="_milKADcJEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_odn3MDcFEeeieIG-Ru0W3g" name="Choisir classe" incoming="_milKADcJEeeieIG-Ru0W3g" outgoing="_uLZVgDcJEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sasJsDcFEeeieIG-Ru0W3g" name="Choisir conseil de classe" incoming="_uLZVgDcJEeeieIG-Ru0W3g" outgoing="_zsQ9EDcJEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_XWPisDcJEeeieIG-Ru0W3g" name="Définir date conseil de classe" incoming="_zsQ9EDcJEeeieIG-Ru0W3g" outgoing="_o8cdADcMEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_br57YDcJEeeieIG-Ru0W3g" name="Date début et fin campagne" incoming="_JTOecDcKEeeieIG-Ru0W3g" outgoing="_poQaIDcMEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction6</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_eQAP0DcJEeeieIG-Ru0W3g" name="Choisir formulaire" incoming="_J80OADcKEeeieIG-Ru0W3g" outgoing="_qQsTIDcMEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction7</body>
+    </node>
+    <node xmi:type="uml:JoinNode" xmi:id="_k9GSkDcMEeeieIG-Ru0W3g" name="Join1" incoming="_oRMgkDcMEeeieIG-Ru0W3g _o8cdADcMEeeieIG-Ru0W3g _poQaIDcMEeeieIG-Ru0W3g _qQsTIDcMEeeieIG-Ru0W3g _lqeggDcNEeeieIG-Ru0W3g" outgoing="_6b1sEDcMEeeieIG-Ru0W3g">
+      <joinSpec xmi:type="uml:LiteralBoolean" xmi:id="_k9XYUDcMEeeieIG-Ru0W3g" name="Join1" value="true"/>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_5P-88DcMEeeieIG-Ru0W3g" name="Decision2" incoming="_6b1sEDcMEeeieIG-Ru0W3g" outgoing="_8nnnIDcMEeeieIG-Ru0W3g _99NroDcNEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dtXgADcNEeeieIG-Ru0W3g" name="Prévisualiser" incoming="_ewNdEDcNEeeieIG-Ru0W3g" outgoing="_lqeggDcNEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction8</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_0BgQcDcNEeeieIG-Ru0W3g" name="Sauvegarder campagne" incoming="_BVMUEDcOEeeieIG-Ru0W3g" outgoing="_GgYmkDcOEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction9</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_0U5tkDcNEeeieIG-Ru0W3g" name="Lancer campagne" incoming="_CElJoDcOEeeieIG-Ru0W3g" outgoing="_HGiAkDcOEeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction10</body>
+    </node>
+    <node xmi:type="uml:ForkNode" xmi:id="_7fNYIDcNEeeieIG-Ru0W3g" name="Fork2" incoming="_99NroDcNEeeieIG-Ru0W3g" outgoing="_BVMUEDcOEeeieIG-Ru0W3g _CElJoDcOEeeieIG-Ru0W3g _ewNdEDcNEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Em58cDcOEeeieIG-Ru0W3g" name="Campagne sauvegardée" incoming="_GgYmkDcOEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_FJ24gDcOEeeieIG-Ru0W3g" name="Campagne sauvegardée et lancée" incoming="_HGiAkDcOEeeieIG-Ru0W3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_QQhZADcQEeeieIG-Ru0W3g" name="Gérer les campagnes" node="_WbDBkDcQEeeieIG-Ru0W3g _cRa_EDcQEeeieIG-Ru0W3g _itj8EDcQEeeieIG-Ru0W3g _lmuhkDcQEeeieIG-Ru0W3g _rQltEDcQEeeieIG-Ru0W3g _t_dHEDcQEeeieIG-Ru0W3g _3pNPkDcQEeeieIG-Ru0W3g _Mha0kDcREeeieIG-Ru0W3g _NOIwoDcREeeieIG-Ru0W3g _NhPS0DcREeeieIG-Ru0W3g _hLOKIDcREeeieIG-Ru0W3g _m1PGoDcREeeieIG-Ru0W3g">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jeGoMDcQEeeieIG-Ru0W3g" target="_itj8EDcQEeeieIG-Ru0W3g" source="_WbDBkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_jeHPQDcQEeeieIG-Ru0W3g" name="Initial1_To_Decision1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_jeH2UDcQEeeieIG-Ru0W3g" name="Initial1_To_Decision1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_x9r3MDcQEeeieIG-Ru0W3g" target="_lmuhkDcQEeeieIG-Ru0W3g" source="_itj8EDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_x9seQDcQEeeieIG-Ru0W3g" name="Decision1_To_Fork1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_x9seQTcQEeeieIG-Ru0W3g" name="Decision1_To_Fork1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zn9nsDcQEeeieIG-Ru0W3g" target="_cRa_EDcQEeeieIG-Ru0W3g" source="_lmuhkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_zn9nsTcQEeeieIG-Ru0W3g" name="Fork1_To_Sélectionner campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_zn-OwDcQEeeieIG-Ru0W3g" name="Fork1_To_Sélectionner campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0lr0MDcQEeeieIG-Ru0W3g" target="_rQltEDcQEeeieIG-Ru0W3g" source="_lmuhkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_0lsbQDcQEeeieIG-Ru0W3g" name="Fork1_To_Modifier campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_0ltCUDcQEeeieIG-Ru0W3g" name="Fork1_To_Modifier campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_1uLGQDcQEeeieIG-Ru0W3g" target="_t_dHEDcQEeeieIG-Ru0W3g" source="_lmuhkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_1uLtUDcQEeeieIG-Ru0W3g" name="Fork1_To_Visualiser les résultats_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_1uMUYDcQEeeieIG-Ru0W3g" name="Fork1_To_Visualiser les résultats_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5cqKMDcQEeeieIG-Ru0W3g" name="Affiner liste" target="_3pNPkDcQEeeieIG-Ru0W3g" source="_itj8EDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_5cqxQDcQEeeieIG-Ru0W3g" name="Decision1_To_Utiliser filtres_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_5cqxQTcQEeeieIG-Ru0W3g" name="Decision1_To_Utiliser filtres_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FvoXsDcREeeieIG-Ru0W3g" target="_itj8EDcQEeeieIG-Ru0W3g" source="_3pNPkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_Fvo-wDcREeeieIG-Ru0W3g" name="Utiliser filtres_To_Decision1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_Fvpl0DcREeeieIG-Ru0W3g" name="Utiliser filtres_To_Decision1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QFL2QDcREeeieIG-Ru0W3g" target="_NhPS0DcREeeieIG-Ru0W3g" source="_cRa_EDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_QFMdUDcREeeieIG-Ru0W3g" name="Sélectionner campagne_To_ActivityFinal3_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_QFNEYDcREeeieIG-Ru0W3g" name="Sélectionner campagne_To_ActivityFinal3_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RYbm0DcREeeieIG-Ru0W3g" target="_NOIwoDcREeeieIG-Ru0W3g" source="_rQltEDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_RYcN4DcREeeieIG-Ru0W3g" name="Modifier campagne_To_ActivityFinal2_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_RYc08DcREeeieIG-Ru0W3g" name="Modifier campagne_To_ActivityFinal2_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SIZrMDcREeeieIG-Ru0W3g" target="_Mha0kDcREeeieIG-Ru0W3g" source="_t_dHEDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_SIZrMTcREeeieIG-Ru0W3g" name="Visualiser les résultats_To_ActivityFinal1_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_SIZrMjcREeeieIG-Ru0W3g" name="Visualiser les résultats_To_ActivityFinal1_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ksJTMDcREeeieIG-Ru0W3g" target="_hLOKIDcREeeieIG-Ru0W3g" source="_lmuhkDcQEeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_ksJ6QDcREeeieIG-Ru0W3g" name="Fork1_To_Suppression de la campagne_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_ksKhUDcREeeieIG-Ru0W3g" name="Fork1_To_Suppression de la campagne_weight"/>
+    </edge>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oTZGsDcREeeieIG-Ru0W3g" target="_m1PGoDcREeeieIG-Ru0W3g" source="_hLOKIDcREeeieIG-Ru0W3g">
+      <guard xmi:type="uml:LiteralBoolean" xmi:id="_oTZtwDcREeeieIG-Ru0W3g" name="Suppression de la campagne_To_ActivityFinal4_guard" value="true"/>
+      <weight xmi:type="uml:LiteralInteger" xmi:id="_oTaU0DcREeeieIG-Ru0W3g" name="Suppression de la campagne_To_ActivityFinal4_weight"/>
+    </edge>
+    <node xmi:type="uml:InitialNode" xmi:id="_WbDBkDcQEeeieIG-Ru0W3g" name="Initial1" outgoing="_jeGoMDcQEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_cRa_EDcQEeeieIG-Ru0W3g" name="Sélectionner campagne" incoming="_zn9nsDcQEeeieIG-Ru0W3g" outgoing="_QFL2QDcREeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction1</body>
+    </node>
+    <node xmi:type="uml:DecisionNode" xmi:id="_itj8EDcQEeeieIG-Ru0W3g" name="Decision1" incoming="_jeGoMDcQEeeieIG-Ru0W3g _FvoXsDcREeeieIG-Ru0W3g" outgoing="_x9r3MDcQEeeieIG-Ru0W3g _5cqKMDcQEeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_lmuhkDcQEeeieIG-Ru0W3g" name="Fork1" incoming="_x9r3MDcQEeeieIG-Ru0W3g" outgoing="_zn9nsDcQEeeieIG-Ru0W3g _0lr0MDcQEeeieIG-Ru0W3g _1uLGQDcQEeeieIG-Ru0W3g _ksJTMDcREeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rQltEDcQEeeieIG-Ru0W3g" name="Modifier campagne" incoming="_0lr0MDcQEeeieIG-Ru0W3g" outgoing="_RYbm0DcREeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction2</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_t_dHEDcQEeeieIG-Ru0W3g" name="Visualiser les résultats" incoming="_1uLGQDcQEeeieIG-Ru0W3g" outgoing="_SIZrMDcREeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction3</body>
+    </node>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_3pNPkDcQEeeieIG-Ru0W3g" name="Utiliser filtres" incoming="_5cqKMDcQEeeieIG-Ru0W3g" outgoing="_FvoXsDcREeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction4</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_Mha0kDcREeeieIG-Ru0W3g" name="Affichage des résultats de la campagne sélectionnée" incoming="_SIZrMDcREeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_NOIwoDcREeeieIG-Ru0W3g" name="Affichage de la campagne en mode édition" incoming="_RYbm0DcREeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_NhPS0DcREeeieIG-Ru0W3g" name="Affichage de la campagne sélectionnée" incoming="_QFL2QDcREeeieIG-Ru0W3g"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hLOKIDcREeeieIG-Ru0W3g" name="Suppression de la campagne" incoming="_ksJTMDcREeeieIG-Ru0W3g" outgoing="_oTZGsDcREeeieIG-Ru0W3g">
+      <body>// TODO body of OpaqueAction5</body>
+    </node>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_m1PGoDcREeeieIG-Ru0W3g" name="Suppression de la campagne sélectionnée" incoming="_oTZGsDcREeeieIG-Ru0W3g"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_dlNv8DcVEeeieIG-Ru0W3g" name="Campagne">
+    <connectionPoint xmi:id="_iFpG0DcYEeeieIG-Ru0W3g" name="EntryPoint1" kind="entryPoint"/>
+    <connectionPoint xmi:id="_pCIX0DcYEeeieIG-Ru0W3g" name="ExitPoint2" kind="exitPoint"/>
+    <region xmi:id="_8BPNgDcVEeeieIG-Ru0W3g" name="Region1">
+      <transition xmi:id="_nsyncDcWEeeieIG-Ru0W3g" source="_Jen_sDcWEeeieIG-Ru0W3g" target="_N3CxcDcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_vzqLcDcXEeeieIG-Ru0W3g" source="_N3CxcDcWEeeieIG-Ru0W3g" target="_TbOywDcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_wygZUDcXEeeieIG-Ru0W3g" source="_TbOywDcWEeeieIG-Ru0W3g" target="_aretQDcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_6di7QDcXEeeieIG-Ru0W3g" source="_hc59wDcWEeeieIG-Ru0W3g" target="_7krX4DcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_7OAu4DcXEeeieIG-Ru0W3g" source="_aretQDcWEeeieIG-Ru0W3g" target="_hc59wDcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_W5QRcDcZEeeieIG-Ru0W3g" source="_TbOywDcWEeeieIG-Ru0W3g" target="_c-zlUDcXEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_ZHo0kDcZEeeieIG-Ru0W3g" source="_aretQDcWEeeieIG-Ru0W3g" target="_c-zlUDcXEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_aoDecDcZEeeieIG-Ru0W3g" source="_hc59wDcWEeeieIG-Ru0W3g" target="_c-zlUDcXEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_MTFHgDcaEeeieIG-Ru0W3g" name="Mise en pause" source="_aretQDcWEeeieIG-Ru0W3g" target="_TbOywDcWEeeieIG-Ru0W3g"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Jen_sDcWEeeieIG-Ru0W3g" name="Initial1"/>
+      <subvertex xmi:type="uml:State" xmi:id="_N3CxcDcWEeeieIG-Ru0W3g" name="En cours de création"/>
+      <subvertex xmi:type="uml:State" xmi:id="_TbOywDcWEeeieIG-Ru0W3g" name="Inactif"/>
+      <subvertex xmi:type="uml:State" xmi:id="_aretQDcWEeeieIG-Ru0W3g" name="Actif"/>
+      <subvertex xmi:type="uml:State" xmi:id="_hc59wDcWEeeieIG-Ru0W3g" name="Terminée"/>
+      <subvertex xmi:type="uml:FinalState" xmi:id="_7krX4DcWEeeieIG-Ru0W3g" name="Final1"/>
+    </region>
+    <region xmi:id="_JIzrQDcXEeeieIG-Ru0W3g" name="Region2">
+      <transition xmi:id="_SDSS8DcXEeeieIG-Ru0W3g" source="_-I62QDcWEeeieIG-Ru0W3g" target="_Qz2EUDcXEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_ewpWYDcXEeeieIG-Ru0W3g" source="_c-zlUDcXEeeieIG-Ru0W3g" target="_-I62QDcWEeeieIG-Ru0W3g"/>
+      <transition xmi:id="_A2pyYDcYEeeieIG-Ru0W3g" target="_c-zlUDcXEeeieIG-Ru0W3g"/>
+      <subvertex xmi:type="uml:State" xmi:id="_-I62QDcWEeeieIG-Ru0W3g" name="Archivée"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_Qz2EUDcXEeeieIG-Ru0W3g" name="Terminate1" kind="terminate"/>
+      <subvertex xmi:type="uml:Pseudostate" xmi:id="_c-zlUDcXEeeieIG-Ru0W3g" name="Join2" kind="join"/>
+    </region>
+  </packagedElement>
+  <packagedElement xmi:type="uml:StateMachine" xmi:id="_ewaiUDcWEeeieIG-Ru0W3g" name="StateMachine2"/>
 </uml:Model>
