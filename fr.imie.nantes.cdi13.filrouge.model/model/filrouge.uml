@@ -544,4 +544,59 @@
     </region>
   </packagedElement>
   <packagedElement xmi:type="uml:StateMachine" xmi:id="_ewaiUDcWEeeieIG-Ru0W3g" name="StateMachine2"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_lfZW0Dx8EeeQ8Lidms1vgA" name="REST Webservice">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_CMIoEDx9EeeQ8Lidms1vgA" client="_lfZW0Dx8EeeQ8Lidms1vgA" supplier="_o-UUwDx8EeeQ8Lidms1vgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_o-UUwDx8EeeQ8Lidms1vgA" name="Business">
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_CxO5MDx9EeeQ8Lidms1vgA" client="_o-UUwDx8EeeQ8Lidms1vgA" supplier="_wL580Dx8EeeQ8Lidms1vgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_wL580Dx8EeeQ8Lidms1vgA" name="Persistence"/>
+  <packagedElement xmi:type="uml:Node" xmi:id="_38-P8Dx9EeeQ8Lidms1vgA" name="Web Client">
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_DhtecDx-EeeQ8Lidms1vgA" name="Internet Browser"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_lGYY4DyHEeeQ8Lidms1vgA" name="Application Server">
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_82di4DyHEeeQ8Lidms1vgA" name="TomEE">
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_D62ysDyIEeeQ8Lidms1vgA" name="REST_Webservice.war"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_KbywIDyIEeeQ8Lidms1vgA" name="Business.war"/>
+      <nestedClassifier xmi:type="uml:Artifact" xmi:id="_MfqsYDyIEeeQ8Lidms1vgA" name="Persistence.war"/>
+    </nestedNode>
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_1K8MMDyIEeeQ8Lidms1vgA" name="NodeJS">
+      <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_PvMRgDyKEeeQ8Lidms1vgA" name="Angular"/>
+    </nestedNode>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Device" xmi:id="_orHD4DyHEeeQ8Lidms1vgA" name="Database Server">
+    <nestedNode xmi:type="uml:ExecutionEnvironment" xmi:id="_th83ADyHEeeQ8Lidms1vgA" name="Postgresql 9.3"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_Qzob8DyIEeeQ8Lidms1vgA" client="_D62ysDyIEeeQ8Lidms1vgA" supplier="_KbywIDyIEeeQ8Lidms1vgA"/>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_RSTU8DyIEeeQ8Lidms1vgA" client="_KbywIDyIEeeQ8Lidms1vgA" supplier="_MfqsYDyIEeeQ8Lidms1vgA"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_SY37cDyIEeeQ8Lidms1vgA" name="jdbc" memberEnd="_SY37cTyIEeeQ8Lidms1vgA _SZBFYjyIEeeQ8Lidms1vgA" navigableOwnedEnd="_SY37cTyIEeeQ8Lidms1vgA _SZBFYjyIEeeQ8Lidms1vgA">
+    <ownedEnd xmi:id="_SY37cTyIEeeQ8Lidms1vgA" name="postgresql 9.3s" type="_th83ADyHEeeQ8Lidms1vgA" association="_SY37cDyIEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SZBFYDyIEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SZBFYTyIEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_SZBFYjyIEeeQ8Lidms1vgA" name="persistence.wars" type="_MfqsYDyIEeeQ8Lidms1vgA" association="_SY37cDyIEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_SZBFYzyIEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_SZBFZDyIEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_BiLR0DyNEeeQ8Lidms1vgA" name="HTTP" memberEnd="_BiLR0TyNEeeQ8Lidms1vgA _BiLR1DyNEeeQ8Lidms1vgA" navigableOwnedEnd="_BiLR0TyNEeeQ8Lidms1vgA _BiLR1DyNEeeQ8Lidms1vgA">
+    <ownedEnd xmi:id="_BiLR0TyNEeeQ8Lidms1vgA" name="internet Browsers" type="_DhtecDx-EeeQ8Lidms1vgA" association="_BiLR0DyNEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BiLR0jyNEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BiLR0zyNEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_BiLR1DyNEeeQ8Lidms1vgA" name="angulars" type="_PvMRgDyKEeeQ8Lidms1vgA" association="_BiLR0DyNEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_BiLR1TyNEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_BiLR1jyNEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_EdyHUDyNEeeQ8Lidms1vgA" name="HTTP" memberEnd="_EdyHUTyNEeeQ8Lidms1vgA _Ed74UjyNEeeQ8Lidms1vgA" navigableOwnedEnd="_EdyHUTyNEeeQ8Lidms1vgA _Ed74UjyNEeeQ8Lidms1vgA">
+    <ownedEnd xmi:id="_EdyHUTyNEeeQ8Lidms1vgA" name="angulars" type="_PvMRgDyKEeeQ8Lidms1vgA" association="_EdyHUDyNEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ed74UDyNEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ed74UTyNEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:id="_Ed74UjyNEeeQ8Lidms1vgA" name="rEST_Webservice.wars" type="_D62ysDyIEeeQ8Lidms1vgA" association="_EdyHUDyNEeeQ8Lidms1vgA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_Ed74UzyNEeeQ8Lidms1vgA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_Ed74VDyNEeeQ8Lidms1vgA" value="*"/>
+    </ownedEnd>
+  </packagedElement>
 </uml:Model>
